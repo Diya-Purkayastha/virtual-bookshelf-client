@@ -1,11 +1,10 @@
 import { useEffect, useState } from 'react';
-import BookCard from '../components/BookCard.jsx'
 import axios from 'axios';
 
-const Bookshelf = () => {
+const AllBooks = () => {
   const [books, setBooks] = useState([]);
   const [query, setQuery] = useState('');
- const [status, setStatus] = useState('');
+  const [status, setStatus] = useState('');
    const [sortOption, setSortOption] = useState('');
 
   useEffect(() => {
@@ -40,7 +39,7 @@ const Bookshelf = () => {
     });
 
   return (
-    <div className="container mx-auto p-4 mt-20">
+    <div className="container mx-auto p-4">
       <h1 className='text-3xl font-bold my-8 text-center'>📚 All Books</h1>
 
       {/* Search & Filter */}
@@ -74,11 +73,47 @@ const Bookshelf = () => {
         </select>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-        {filtered.map(book => <BookCard key={book._id} book={book}></BookCard>)}
+      {/* Responsive Table */}
+      <div className="overflow-x-auto rounded-lg shadow">
+        <table className="table table-zebra w-full text-sm">
+          <thead className="bg-base-200 text-base font-semibold text-base-content">
+            <tr>
+              <th>#</th>
+              <th>Cover</th>
+              <th>Title</th>
+              <th>Author</th>
+              <th>Category</th>
+              <th>Status</th>
+              <th>Upvotes</th>
+            </tr>
+          </thead>
+          <tbody>
+            {filtered.map((book, index) => (
+              <tr key={book._id}>
+                <td>{index + 1}</td>
+                <td>
+                  <img
+                    src={book.cover_photo}
+                    alt={book.book_title}
+                    className="w-12 h-16 object-cover rounded"
+                  />
+                </td>
+                <td className="font-semibold">{book.book_title}</td>
+                <td>{book.book_author}</td>
+                <td>{book.book_category}</td>
+                <td>
+                  <span className="badge badge-outline badge-sm">
+                    {book.reading_status}
+                  </span>
+                </td>
+                <td className="text-center">{book.upvote}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
       </div>
     </div>
   );
 };
 
-export default Bookshelf;
+export default AllBooks;

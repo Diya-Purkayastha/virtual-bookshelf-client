@@ -11,15 +11,15 @@ const PopularBooks = () => {
     axios.get('https://virtual-bookshelf-server-nine.vercel.app/books')
       .then(res => {
         const sorted = res.data.sort((a, b) => b.upvote - a.upvote);
-        setBooks(sorted.slice(0, 9)); // Top 9 books
+        setBooks(sorted.slice(0, 8)); // Top 8 books
       });
   }, []);
 
   return (
-    <section className="container mx-auto px-4 my-24">
+    <section className="container mx-auto px-4 mt-30">
       <h2 className="text-4xl font-bold mb-6 text-center">📚 Popular Books</h2>
       <Fade direction='up' delay={300} triggerOnce>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
         {books.map((book, i) => (
           <motion.div
             key={book._id}

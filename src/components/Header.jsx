@@ -6,6 +6,7 @@ import { useEffect } from 'react';
 import { useState } from 'react';
 import Swal from 'sweetalert2';
 import { FaMoon, FaSun } from "react-icons/fa";
+import Logo from './Logo';
 
 
 const Header = () => {
@@ -36,7 +37,7 @@ const Header = () => {
     }
 
     return (
-        <div className='bg-primary border-b-1 border-white ' >
+        <div className='fixed top-0 left-0 z-50 w-full transition-all duration-300 bg-primary' >
             <div className="navbar w-11/12 mx-auto">
                 <div className="navbar-start">
                     <div className="dropdown">
@@ -48,25 +49,27 @@ const Header = () => {
                             className="menu menu-sm dropdown-content bg-white rounded-box z-1 mt-3 w-52 p-2 shadow">
                             <li><NavLink to="/">Home</NavLink></li>
                             <li><NavLink to="/bookshelf">Bookshelf</NavLink></li>
-                            <li><NavLink to="/add-book">Add Book</NavLink></li>
-                            <li><NavLink to="/my-books">My Books</NavLink></li>
-                            <li><NavLink to="/profile">Profile</NavLink></li>
+                            {
+                                user && <li><NavLink to="/dashboard">Dashboard</NavLink></li>
+                            }
 
                         </ul>
                     </div>
-                    <a className=" text-xl"><div className="md:text-3xl text-white font-medium"><h1>VR<span className='text-secondary'>📚booK</span></h1></div></a>
+                    <Logo></Logo>
                 </div>
                 <div className="navbar-center text-white  hidden lg:flex ">
                     <ul className="menu menu-horizontal flex gap-4 text-[16px] px-1">
-                        <li><NavLink to="/">Home</NavLink></li>
-                        <li><NavLink to="/bookshelf">Bookshelf</NavLink></li>
-                        <li><NavLink to="/add-book">Add Book</NavLink></li>
-                        <li><NavLink to="/my-books">My Books</NavLink></li>
-                        <li><NavLink to="/profile">Profile</NavLink></li>
+                         <li><NavLink to="/">Home</NavLink></li>
+                            <li><NavLink to="/bookshelf">Bookshelf</NavLink></li>
+                            <li><NavLink to="/aboutUs">About Us</NavLink></li>
+                            <li><NavLink to="/contactUs">Contact</NavLink></li>
+                            {
+                                user && <li><NavLink to="/dashboard">Dashboard</NavLink></li>
+                            }
 
                     </ul>
                 </div>
-                <div className="navbar-end">
+                <div className="navbar-end items-center">
                     <div className="login-btn flex gap-5">
                          <button
                             onClick={handleThemeToggle}

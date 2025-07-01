@@ -18,7 +18,7 @@ const BookCard = ({ book }) => {
         <img src={cover_photo} alt={book_title} className="object-cover w-full h-full" />
       </figure>
       <div className="card-body">
-        <h2 className="card-title">{book_title}</h2>
+        <h2 className="card-title line-clamp-1">{book_title}</h2>
         <p className="text-sm text-gray-500">by {book_author}</p>
         <p className="badge  badge-secondary">{book_category}</p>
         <div className="flex justify-between items-center mt-2">

@@ -22,7 +22,7 @@ const categories = [
 const FeaturedCategories = () => {
   return (
     <section
-      className="py-16 bg-cover bg-center bg-fixed relative"
+      className="py-16 bg-cover bg-center bg-fixed relative mt-30 "
       style={{
         backgroundImage: `url('https://i.ibb.co/qL4whqS7/why-img.webp')`
       }}
@@ -30,7 +30,7 @@ const FeaturedCategories = () => {
 
       
 
-      <div className='container px-4 py-14 md:py-20 mx-auto my-8'>
+      <div className='container px-4 py-14 md:py-20 mx-auto '>
         <h2 className="text-3xl font-bold text-center text-primary mb-8">
          Featured Categories
       </h2>

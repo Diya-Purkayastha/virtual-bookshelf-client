@@ -13,6 +13,10 @@ import UpdateBook from '../pages/UpdateBook';
 import Profile from '../pages/Profile';
 import Bookshelf from "../pages/Bookshelf.jsx";
 import PrivacyPolicy from "../pages/PrivacyPolicy.jsx";
+import DashboardLayout from "../Dashboard/DashboardLayout.jsx";
+import AboutUs from "../pages/AboutUs.jsx";
+import ContactUs from "../pages/ContactUs.jsx";
+import AllBooks from "../Dashboard/AllBooks.jsx";
 
 export const Router = createBrowserRouter([
     {
@@ -45,27 +49,51 @@ export const Router = createBrowserRouter([
                 element: <BookDetails />
             },
             {
-                path: '/add-book',
-                element: <PrivateRoute><AddBook /></PrivateRoute>
-            },
-            {
-                path: '/my-books',
-                element: <PrivateRoute><MyBooks /></PrivateRoute>
-            },
-            {
-                path: '/update-book/:id',
-                element: <PrivateRoute><UpdateBook /></PrivateRoute>
-            },
-            {
-                path: '/profile',
-                element: <PrivateRoute><Profile /></PrivateRoute>
-            },
-            {
                 path:'/privacypolicy',
                 Component:PrivacyPolicy
             },
+            {
+                path:'/aboutUs',
+                Component:AboutUs
+            },
+            {
+                path:'/contactUs',
+                Component:ContactUs
+            }
 
-
+        ]
+    },
+    {
+        path: '/dashboard',
+        element: <PrivateRoute>
+            <DashboardLayout></DashboardLayout>
+        </PrivateRoute>,
+        children: [
+             {
+                index: true,
+                element:<Profile></Profile>
+            },
+            {
+                path: 'add-book',
+                element: <AddBook />
+            },
+            {
+                path: 'my-books',
+                element: <MyBooks />
+            },
+            {
+                path: 'my-books/update-book/:id',
+                element: <UpdateBook />
+            },
+            {
+                path: 'profile',
+                element: <Profile />
+            },
+            {
+                path:'all-book',
+                Component:AllBooks
+            }
+            
         ]
     },
     {

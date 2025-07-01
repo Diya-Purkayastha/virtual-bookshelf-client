@@ -9,7 +9,7 @@ const AdditionalSections = () => {
     return (
         <div>
             <Fade direction='up' delay={300} triggerOnce> 
-            <section className=" container mx-auto px-4 py-20 md:py-28 my-8">
+            <section className=" container mx-auto px-4 py-20 md:py-28 ">
                 <div className="max-w-4xl mx-auto px-4 py-14 text-center  border-b border-t">
                     <h2 className="text-3xl font-bold text-primary mb-4">📘 Track Your Reading Goals</h2>
                     <p className="text-gray-600 text-lg leading-relaxed">
@@ -28,9 +28,10 @@ const AdditionalSections = () => {
             </section>
             </Fade>
                   <Fade direction='up' delay={300} triggerOnce> 
-            <section className="bg-base-300 py-20 md:py-28 my-8">
+            <section className="bg-neutral py-20 md:py-28 my-8">
+                
                 <div className="flex flex-col md:flex-row items-center container mx-auto bg-base-200 rounded-lg shadow-lg overflow-hidden">
-
+                    <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[90%] h-40 bg-primary blur-3xl opacity-30 z-0" />
                     {/* Left Side - Illustration */}
                     
                     <div className="md:w-1/2 w-full">
