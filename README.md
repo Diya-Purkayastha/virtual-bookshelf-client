@@ -7,10 +7,11 @@ A responsive, animation-rich frontend React application that allows users to cre
 👉 [https://vrbookshelf.netlify.app/](https://vrbookshelf.netlify.app/)
 
 ## 📸 Screenshot
-![image](https://github.com/user-attachments/assets/63376271-d5f6-42d8-99b3-ab003b2760d2)
-![image](https://github.com/user-attachments/assets/1ec7ed16-f069-4636-ad8f-ee25ace2f1ee)
-![image](https://github.com/user-attachments/assets/72e2be02-5a69-4c97-9091-e0ce633f76d5)
-![image](https://github.com/user-attachments/assets/d201d019-07d5-412b-8d49-a60b3c137e01)
+![image](https://github.com/user-attachments/assets/accd5b72-f842-42ea-b10b-4b88bf8094ba)
+![image](https://github.com/user-attachments/assets/b2f2cd70-ec75-4c58-9535-6c7a553a419c)
+![image](https://github.com/user-attachments/assets/beaba56e-ed95-4219-902e-213325e7a13f)
+![image](https://github.com/user-attachments/assets/262a86ac-bc5e-4156-adce-77b528453535)
+![image](https://github.com/user-attachments/assets/261bb601-80e8-437b-87d0-10599f1f177a)
 
 ## 🚀 Tech Stack
 
@@ -40,6 +41,9 @@ A responsive, animation-rich frontend React application that allows users to cre
 - ⏫ Upvote system to highlight popular books
 - 📱 Fully responsive for mobile, tablet, and desktop
 - 🌈 Modern design inspired by Goodreads/LibraryThing
+-  🔍 Advanced bookshelf with search, dropdown filters, and responsive tables
+- 🧭 Route-based layouts with nested routes (MainLayout, AuthLayout, DashboardLayout)
+- 🛡️ Firebase token verification on protected API endpoints (Add/Update/Delete)
 
 ## 📄 Pages & Routes
 
