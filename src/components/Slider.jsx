@@ -23,7 +23,7 @@ const Slider = () => {
                 {/* Slide 1 */}
                 <SwiperSlide>
                      <div
-                        className="relative h-[500px] md:h-[80vh] w-full bg-cover bg-center flex items-center "
+                        className="relative h-[500px] md:h-[85vh] w-full bg-cover bg-center flex items-center "
                         style={{
                             backgroundImage: "url('https://i.ibb.co/1JXrWrtz/andrew-draper-GI51-PEwz2-Hw-unsplash.jpg')",
                         }}
@@ -35,7 +35,7 @@ const Slider = () => {
 
                         {/* Left Text Content */}
                         
-                        <div className="md:w-1/2 text-center md:text-left py-12 md:pl-10 space-y-6">
+                        <div className="md:w-1/2 text-center md:text-left py-12 md:pl-10 space-y-6 mt-12 md:mt-0">
                         <Fade direction='down' delay={300}>
                             <h1 className="text-4xl md:text-6xl font-light text-base-content leading-tight  ">
                                 Middle-earth <br />
@@ -59,15 +59,16 @@ const Slider = () => {
                        
 
                         {/* Right Image */}
-                        
+                            
                             <div className="hidden md:flex md:w-1/2 items-center justify-center h-full ">
-                   
+                            <Fade direction='right' delay={300} triggerOnce>
                             <img
                                 src="https://i.ibb.co/SDrQ3mjh/s1.jpg"
                                 alt="book"
                                 className="max-h-[500px] w-auto object-contain border-r-8 border-primary border-b-8 shadow-2xl rounded-2xl"
                             />
                             
+                        </Fade>
                         </div>
                         
                         
@@ -78,7 +79,7 @@ const Slider = () => {
                 {/* Slide 2 */}
                 <SwiperSlide>
                      <div
-                        className="relative h-[500px] md:h-[80vh] w-full bg-cover bg-center flex items-center "
+                        className="relative h-[500px] md:h-[85vh] w-full bg-cover bg-center flex items-center "
                         style={{
                             backgroundImage: "url('https://i.ibb.co/8gvxTC66/marjhon-obsioma-gwzzi-26-K-k-unsplash.jpg')",
                         }}
@@ -87,7 +88,7 @@ const Slider = () => {
                         <div className="absolute inset-0 bg-black/70 opacity-40 z-0"></div>
 
                     <div className="relative z-10 flex flex-col md:flex-row items-center justify-between h-full w-full overflow-hidden px-8 md:px-16">
-                        <div className="md:w-1/2 text-center md:text-left py-12 md:pl-10 space-y-6">
+                        <div className="md:w-1/2 text-center md:text-left py-12 md:pl-10 space-y-6 mt-12 md:mt-0">
                         <Fade direction='down' delay={300}>
                             <h1 className="text-4xl md:text-6xl font-light text-base-content leading-tight">
                                 Regency Romance <br />
@@ -113,13 +114,13 @@ const Slider = () => {
 
                 
                         <div className="hidden md:flex md:w-1/2 items-center justify-center h-full ">
-                   
+                             <Fade direction='right' delay={300} triggerOnce>
                             <img
                                src="https://i.ibb.co/sJ9J6bzF/s3.jpg"
                                 alt="book"
                                 className="max-h-[500px] w-auto object-contain border-r-8 border-primary border-b-8 shadow-2xl rounded-2xl"
                             />
-                            
+                            </Fade>
                         </div>
                     </div>
                     </div>
@@ -128,7 +129,7 @@ const Slider = () => {
                 {/* Slide 3 */}
                 <SwiperSlide>
                      <div
-                        className="relative h-[500px] md:h-[80vh] w-full bg-cover bg-center flex items-center "
+                        className="relative h-[500px] md:h-[85vh] w-full bg-cover bg-center flex items-center "
                         style={{
                             backgroundImage: "url('https://i.ibb.co/jPzvTx9f/edoardo-botez-2-SBBsa2n-Ma-E-unsplash.jpg')",
                         }}
@@ -137,9 +138,9 @@ const Slider = () => {
                         <div className="absolute inset-0 bg-black/70 opacity-40 z-0"></div>
 
                     <div className=" relative z-10 flex flex-col md:flex-row items-center justify-between h-full w-full overflow-hidden px-8 md:px-16 ">
-                        <div className="md:w-1/2 text-center md:text-left py-12 md:pl-10 space-y-6">
+                        <div className="md:w-1/2 text-center md:text-left py-12 md:pl-10 space-y-6 mt-12 md:mt-0">
                         <Fade direction='down' delay={300}> 
-                             <h1 className="text-4xl md:text-6xl font-light text-base-content leading-tight">
+                             <h1 className="text-4xl md:text-6xl font-light text-base-content leading-tight ">
                                 Big Brother <br />
                                 <span className="font-bold">Surveillance Set</span>
                             </h1>
@@ -162,13 +163,13 @@ const Slider = () => {
                         </div>
 
                             <div className="hidden md:flex md:w-1/2 items-center justify-center h-full ">
-                   
+                             <Fade direction='right' delay={300} triggerOnce>
                             <img
                                src="https://i.ibb.co/twkLJwxD/s2.jpg"
                                 alt="book"
                                 className="max-h-[500px] w-auto object-contain border-r-8 border-primary border-b-8 shadow-2xl rounded-2xl"
                             />
-                            
+                            </Fade>
                         </div>
                           
                     </div>

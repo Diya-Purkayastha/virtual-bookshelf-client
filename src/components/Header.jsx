@@ -87,7 +87,7 @@ const Header = () => {
                             />
                         }
                         {
-                            user ? <button onClick={handleLogout} className='btn btn-secondary text-primary'>Log Out</button> : <Link to='login' className='btn btn-secondary md:px-10 text-primary'  >Login</Link>
+                            user ? <button onClick={handleLogout} className='btn btn-secondary text-primary'>Log Out</button> : <Link to='/auth/login' className='btn btn-secondary md:px-10 text-primary'  >Login</Link>
                         }
 
                     </div>

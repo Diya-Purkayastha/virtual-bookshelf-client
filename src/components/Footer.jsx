@@ -1,9 +1,10 @@
 import React from 'react';
 import { Link } from 'react-router';
+import Logo from './Logo';
 
 const Footer = () => {
     return (
-        <footer className="footer footer-horizontal footer-center text-white p-10 relative overflow-hidden pt-20 pb-10 px-4">
+        <footer className="footer footer-horizontal footer-center text-white p-10 relative overflow-hidden pt-22 pb-10 px-4 mt-8">
              <div className="absolute inset-0 -z-10">
                 <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -32,7 +33,9 @@ const Footer = () => {
             <aside>
                
                 <div className="text-lg font-bold ">
-                <div className="text-3xl text-white font-medium mt-6"><h1>VR<span className='text-secondary'>📚booK</span></h1></div>
+                    <div className='flex justify-center'>
+                         <Logo></Logo>
+                    </div>
                    
                     Providing reliable books since 1992
                 </div>

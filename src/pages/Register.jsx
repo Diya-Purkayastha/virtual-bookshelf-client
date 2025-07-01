@@ -79,9 +79,9 @@ const Register = () => {
 
   {/* Background Image with Opacity */}
   <div
-    className="absolute inset-0  bg-contain bg-center opacity-80 -z-10 bg-no-repeat"
+    className="absolute inset-0  bg-cover bg-center opacity-80 -z-10 bg-no-repeat"
     style={{
-      backgroundImage: `url('https://i.ibb.co/cmLkFkj/books-isolated-white.jpg')`,
+      backgroundImage: `url('https://i.ibb.co/rVRdWkG/kimberly-farmer-l-Uaa-KCUANVI-unsplash.jpg')`,
     }}
   ></div>
 
@@ -111,7 +111,7 @@ const Register = () => {
                             <BsGoogle></BsGoogle> Login with Google
                         </button>
                     </fieldset>
-                    <p className='text-black text-center font-semibold mt-5'>Already Have An Account ? <Link to='/login' className='text-secondary underline'>Login</Link> </p>
+                    <p className='text-black text-center font-semibold mt-5'>Already Have An Account ? <Link to='/auth/login' className='text-secondary underline'>Login</Link> </p>
                 </form>
             </div>
         </div>

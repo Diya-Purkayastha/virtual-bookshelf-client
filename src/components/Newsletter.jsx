@@ -1,4 +1,5 @@
 import React from 'react';
+import { Fade } from 'react-awesome-reveal';
 import { toast } from 'react-toastify';
 
 const Newsletter = () => {
@@ -7,6 +8,7 @@ const Newsletter = () => {
         toast.success('Thanks for your attention')
     }
   return (
+    <Fade direction='up' delay={300} triggerOnce>
     <div className="py-12 mt-30 ">
         <div className="relative w-full bg-neutral rounded-xl overflow-hidden">
                 {/* 🔆 Top-centered orange glow */}
@@ -41,6 +43,7 @@ const Newsletter = () => {
       </div>
       </div>
     </div>
+    </Fade>
   );
 };
 

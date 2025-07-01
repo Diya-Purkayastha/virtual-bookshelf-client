@@ -41,7 +41,8 @@ const Bookshelf = () => {
 
   return (
     <div className="container mx-auto p-4 mt-20">
-      <h1 className='text-3xl font-bold my-8 text-center'>📚 All Books</h1>
+      <h1 className='text-3xl font-bold mt-8 mb-4 text-center'>📚 Bookshelf</h1>
+      <p className='mb-8 text-center italic text-sm'>"A room without books is like a body without a soul." - Marcus Tullius Cicero </p>
 
       {/* Search & Filter */}
       <div className="mb-6 flex flex-col md:flex-row items-center justify-center gap-4">

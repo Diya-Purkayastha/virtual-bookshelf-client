@@ -1,8 +1,10 @@
 import React from 'react';
+import { Fade } from 'react-awesome-reveal';
 import { NavLink } from 'react-router';
 
 const PromotionalBanner = () => {
     return (
+        <Fade direction='up' delay={300} triggerOnce>
         <div className="container mx-auto px-4 mt-30  ">
             <div className="relative w-full  rounded-xl overflow-hidden">
 
@@ -25,11 +27,12 @@ const PromotionalBanner = () => {
                             </p>
                             
                         </div>
-                        <NavLink to='/'><button className="btn btn-primary mt-4 lg:mt-0">Claim Your Box</button></NavLink>
+                        <NavLink to='/bookshelf'><button className="btn btn-primary mt-4 lg:mt-0">Claim Your Box</button></NavLink>
                     </div>
                 </div>
             </div>
         </div>
+        </Fade>
     );
 };
 

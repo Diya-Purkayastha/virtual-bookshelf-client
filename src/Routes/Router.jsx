@@ -17,6 +17,7 @@ import DashboardLayout from "../Dashboard/DashboardLayout.jsx";
 import AboutUs from "../pages/AboutUs.jsx";
 import ContactUs from "../pages/ContactUs.jsx";
 import AllBooks from "../Dashboard/AllBooks.jsx";
+import AuthLayout from "../layout/AuthLayout.jsx";
 
 export const Router = createBrowserRouter([
     {
@@ -27,18 +28,6 @@ export const Router = createBrowserRouter([
                 index: true,
                 path: '/',
                 Component: Home
-            },
-            {
-                path: '/login',
-                Component: Login
-            },
-            {
-                path: '/register',
-                Component: Register
-            },
-            {
-                path: '/forgetpass',
-                Component: ForgetPass
             },
             {
                 path: '/bookshelf',
@@ -94,6 +83,24 @@ export const Router = createBrowserRouter([
                 Component:AllBooks
             }
             
+        ]
+    },
+    {
+        path: '/auth',
+        Component:AuthLayout,
+        children: [
+            {
+                path: 'login',
+                Component: Login
+            },
+            {
+                path: 'register',
+                Component: Register
+            },
+            {
+                path: 'forgetpass',
+                Component: ForgetPass
+            },
         ]
     },
     {

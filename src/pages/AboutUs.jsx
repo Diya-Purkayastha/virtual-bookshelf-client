@@ -1,8 +1,12 @@
 import React from 'react';
+import { NavLink } from 'react-router';
+import Newsletter from '../components/Newsletter';
+import FeaturedCategories from '../components/FeaturedCategory';
+import AdditionalSections from '../components/AdditionalSections';
 
 const AboutUs = () => {
     return (
-       <section className="py-20 px-6 md:px-20 bg-base-100">
+       <section className="py-20 px-6 lg:px-0 bg-base-100 mt-10">
   <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
 
     {/* Custom Image Grid */}
@@ -40,9 +44,13 @@ const AboutUs = () => {
         Virtual Bookshelf helps you track, organize, and revisit stories that move you—without the clutter.
         Enjoy a personal, secure, and elegant reading companion that grows with your passion.
       </p>
-      <button className="btn btn-primary">Explore Features</button>
+      <NavLink to='/bookshelf'><button className="btn btn-primary">Explore Features</button></NavLink>
     </div>
 
+  </div>
+  <AdditionalSections></AdditionalSections>
+  <div className='w-11/12 mx-auto'>
+    <Newsletter></Newsletter>
   </div>
 </section>
 
