@@ -4,8 +4,10 @@ import axios from 'axios';
 import { Link } from 'react-router';
 import Swal from 'sweetalert2';
 import { getFirebaseToken } from '../utils/getFirebaseToken';
+import useTitle from '../hook/useTitle';
 
 const MyBooks = () => {
+   useTitle('My Books')
   const { user } = useContext(AuthContext);
   const [books, setBooks] = useState([]);
 

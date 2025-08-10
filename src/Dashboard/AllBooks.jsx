@@ -1,7 +1,9 @@
 import { useEffect, useState } from 'react';
 import axios from 'axios';
+import useTitle from '../hook/useTitle';
 
 const AllBooks = () => {
+   useTitle('All Books')
   const [books, setBooks] = useState([]);
   const [query, setQuery] = useState('');
   const [status, setStatus] = useState('');

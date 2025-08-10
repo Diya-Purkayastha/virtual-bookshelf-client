@@ -3,10 +3,12 @@ import axios from 'axios';
 import { PieChart, Pie, Cell, Tooltip, Legend } from 'recharts';
 import { AuthContext } from '../provider/AuthProvider';
 import { getFirebaseToken } from '../utils/getFirebaseToken';
+import useTitle from '../hook/useTitle';
 
 const COLORS = ['#4ade80', '#60a5fa', '#facc15', '#f87171', '#a78bfa'];
 
 const Profile = () => {
+   useTitle('Profile')
   const { user } = useContext(AuthContext);
   const [books, setBooks] = useState([]);
 

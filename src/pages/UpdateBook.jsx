@@ -7,8 +7,10 @@ import Lottie from 'lottie-react';
 import update from '../assets/animation/update.json'
 import Loading from '../components/Loading';
 import { getFirebaseToken } from '../utils/getFirebaseToken';
+import useTitle from '../hook/useTitle';
 
 const UpdateBook = () => {
+   useTitle('Update Book')
   const { id } = useParams();
   const { user } = useContext(AuthContext);
   const navigate = useNavigate();
