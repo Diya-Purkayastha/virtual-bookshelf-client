@@ -12,7 +12,7 @@ const AdditionalSections = () => {
             <section className=" container mx-auto px-4 py-20 md:py-28 ">
                 <div className="max-w-4xl mx-auto px-4 py-14 text-center  border-b border-t">
                     <h2 className="text-3xl font-bold text-primary mb-4">📘 Track Your Reading Goals</h2>
-                    <p className="text-gray-600 text-lg leading-relaxed">
+                    <p className="text-gray-400 text-lg leading-relaxed">
                         Stay motivated and build a consistent reading habit by organizing your progress into
                         <span className="text-primary font-semibold"> Want to Read</span>,
                         <span className="text-primary font-semibold"> Reading</span>, and
@@ -44,7 +44,7 @@ const AdditionalSections = () => {
                     {/* Right Side - Text */}
                     <div className="md:w-1/2 w-full p-8 text-gray-700 space-y-5">
                         <h2 className="text-3xl font-bold text-primary mb-2">Why Choose BookShelf?</h2>
-                        <ul className="space-y-3 list-disc list-inside text-base">
+                        <ul className="space-y-3 list-disc list-inside text-primary">
                             <li>Organize your reading into clear, trackable statuses.</li>
                             <li>See what others are loving with upvoted books.</li>
                             <li>Write and explore honest book reviews.</li>

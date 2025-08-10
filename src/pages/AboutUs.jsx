@@ -38,7 +38,7 @@ const AboutUs = () => {
     {/* Text Content */}
     <div className="space-y-5 text-center md:text-left">
       <h2 className="text-3xl font-extrabold text-primary">📚 About Virtual Bookshelf</h2>
-      <h3 className="text-xl font-semibold text-secondary">
+      <h3 className="text-xl font-semibold text-primary">
         Designed for Readers Who Think Beyond the Page
       </h3>
       <p className="text-base-content">
