@@ -6,8 +6,8 @@ import AdditionalSections from '../components/AdditionalSections';
 
 const AboutUs = () => {
     return (
-       <section className="py-20 px-6 lg:px-0 bg-base-100 mt-10">
-  <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+       <section className="py-20 px-6 lg:px-0 bg-base-100 mt-10 ">
+  <div className="w-11/12 mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
 
     {/* Custom Image Grid */}
     <div className="grid grid-cols-2 grid-rows-2">
