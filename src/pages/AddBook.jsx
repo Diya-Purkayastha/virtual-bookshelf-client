@@ -6,8 +6,10 @@ import { useNavigate } from 'react-router';
 import Lottie from 'lottie-react';
 import add from '../assets/animation/addbook.json'
 import { getFirebaseToken } from '../utils/getFirebaseToken';
+import useTitle from '../hook/useTitle';
 
 const AddBook = () => {
+   useTitle('Add Book')
   const { user } = useContext(AuthContext);
  
   const navigate = useNavigate();

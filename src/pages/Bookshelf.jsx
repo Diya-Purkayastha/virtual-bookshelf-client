@@ -1,8 +1,10 @@
 import { useEffect, useState } from 'react';
 import BookCard from '../components/BookCard.jsx'
 import axios from 'axios';
+import useTitle from '../hook/useTitle.jsx';
 
 const Bookshelf = () => {
+   useTitle('Bookshelf')
   const [books, setBooks] = useState([]);
   const [query, setQuery] = useState('');
  const [status, setStatus] = useState('');

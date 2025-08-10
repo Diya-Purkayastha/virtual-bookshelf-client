@@ -2,8 +2,10 @@ import React from 'react';
 import { Slide } from 'react-awesome-reveal';
 import PromotionalBanner from '../components/PromotionalBanner';
 import Newsletter from '../components/Newsletter';
+import useTitle from '../hook/useTitle';
 
 const ContactUs = () => {
+     useTitle('Contact Us')
     return (
         <div>
             <Slide delay={300} direction='up' triggerOnce>

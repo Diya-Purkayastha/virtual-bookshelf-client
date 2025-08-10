@@ -3,8 +3,10 @@ import { NavLink } from 'react-router';
 import Newsletter from '../components/Newsletter';
 import FeaturedCategories from '../components/FeaturedCategory';
 import AdditionalSections from '../components/AdditionalSections';
+import useTitle from '../hook/useTitle';
 
 const AboutUs = () => {
+   useTitle('About Us')
     return (
        <section className="py-20 px-6 lg:px-0 bg-base-100 mt-10 ">
   <div className="w-11/12 mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
