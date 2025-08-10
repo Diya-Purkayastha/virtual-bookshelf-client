@@ -18,6 +18,7 @@ import AboutUs from "../pages/AboutUs.jsx";
 import ContactUs from "../pages/ContactUs.jsx";
 import AllBooks from "../Dashboard/AllBooks.jsx";
 import AuthLayout from "../layout/AuthLayout.jsx";
+import DashboardHome from "../Dashboard/DashboardHome.jsx";
 
 export const Router = createBrowserRouter([
     {
@@ -60,7 +61,7 @@ export const Router = createBrowserRouter([
         children: [
              {
                 index: true,
-                element:<Profile></Profile>
+                element:<DashboardHome></DashboardHome>
             },
             {
                 path: 'add-book',
