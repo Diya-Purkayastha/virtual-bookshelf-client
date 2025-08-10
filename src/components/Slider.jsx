@@ -11,7 +11,7 @@ import { Fade, Slide } from "react-awesome-reveal";
 
 const Slider = () => {
     return (
-        <div className="w-full h-[80vh] group relative ">
+        <div className="w-full h-[85vh] group relative ">
             <Swiper
                 modules={[Navigation, Pagination, A11y]}
                 spaceBetween={50}
@@ -60,7 +60,7 @@ const Slider = () => {
 
                         {/* Right Image */}
                             
-                            <div className="hidden md:flex md:w-1/2 items-center justify-center h-full ">
+                            <div className="hidden md:flex md:w-1/2 items-center justify-center h-full md:mt-10 ">
                             <Fade direction='right' delay={300} triggerOnce>
                             <img
                                 src="https://i.ibb.co/SDrQ3mjh/s1.jpg"
@@ -113,7 +113,7 @@ const Slider = () => {
                         </div>
 
                 
-                        <div className="hidden md:flex md:w-1/2 items-center justify-center h-full ">
+                        <div className="hidden md:flex md:w-1/2 items-center justify-center h-full md:mt-10 ">
                              <Fade direction='right' delay={300} triggerOnce>
                             <img
                                src="https://i.ibb.co/sJ9J6bzF/s3.jpg"
@@ -162,7 +162,7 @@ const Slider = () => {
                             
                         </div>
 
-                            <div className="hidden md:flex md:w-1/2 items-center justify-center h-full ">
+                            <div className="hidden md:flex md:w-1/2 items-center justify-center h-full md:mt-10">
                              <Fade direction='right' delay={300} triggerOnce>
                             <img
                                src="https://i.ibb.co/twkLJwxD/s2.jpg"
