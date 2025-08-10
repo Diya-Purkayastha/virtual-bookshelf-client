@@ -19,6 +19,7 @@ A responsive, animation-rich frontend React application that allows users to cre
 - Tailwind CSS
 - DaisyUI
 - React Router DOM
+- Express
 - Firebase Authentication (Google + Email/Password)
 - Axios
 - Framer Motion
